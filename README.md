@@ -325,17 +325,7 @@ Validacion del login cuando el correo y la contrasena son correctos.
 
 ## Video corto
 
-En el video se puede mostrar este orden:
-
-1. Abrir `index.html`.
-2. Escribir datos incorrectos para mostrar las advertencias.
-3. Corregir el nombre y mostrar `formatearNombre`.
-4. Corregir el telefono y mostrar `limpiarTelefono`.
-5. Escribir una contrasena y mostrar como sube la barra.
-6. Enviar el formulario y mostrar el modal con la edad.
-7. Abrir `login.html` y validar correo y contrasena.
-
-El enlace del video se agrega al entregar el repositorio.
+https://www.youtube.com/watch?v=oOvpY06ixpM
 
 ## Conclusion
 
