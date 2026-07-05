@@ -8,7 +8,7 @@
 
 <br>
 
-![Logo de portada](img/00-portada-logo.png)
+![Logo de portada](img/logoportada.png)
 
 <br>
 
@@ -31,16 +31,6 @@
 ---
 
 # Utileria JS para formularios
-
-## Nota sobre la imagen de portada
-
-La imagen principal de la portada debe guardarse dentro de la carpeta `img` con este nombre exacto:
-
-```txt
-img/00-portada-logo.png
-```
-
-Puede ser el logo de la escuela, el logo de la carrera o una imagen relacionada con programacion web. Si usas una captura parecida a la que mostraste, recortala para que solo se vea el logo central y no toda la hoja completa.
 
 ## Descripcion del proyecto
 
@@ -196,7 +186,7 @@ Cada linea revisa un requisito diferente de la contrasena.
 Esta funcion limpia espacios extra, convierte el texto a minusculas y pone mayuscula al inicio de cada palabra.
 
 ```js
-formatearNombre("  oMAR   vALENCIA  "); // "Omar Valencia"
+formatearNombre("  mARIA   loPEZ  "); // "Maria Lopez"
 ```
 
 En el formulario se muestra debajo del campo de nombre para comprobar que la funcion se esta usando.
@@ -285,137 +275,51 @@ Esto demuestra que `utileria.js` se puede usar en mas de una pagina.
 
 ## Capturas de pantalla
 
-Guarda tus capturas dentro de la carpeta `img` con estos nombres exactos para que se vean en el README.
-
 ### 1. Formulario vacio
 
-Toma esta captura al abrir `index.html`, antes de escribir datos.
-
-Nombre del archivo:
-
-```txt
-img/01-formulario-vacio.png
-```
+Vista inicial del formulario antes de ingresar informacion.
 
 ![Formulario vacio](img/01-formulario-vacio.png)
 
 ### 2. Advertencias del formulario
 
-Toma esta captura despues de escribir datos incorrectos, por ejemplo:
-
-- nombre con numeros
-- correo sin `@`
-- telefono incompleto
-- fecha de menor de edad
-- password debil
-
-Debe verse que aparecen mensajes rojos.
-
-Nombre del archivo:
-
-```txt
-img/02-advertencias-formulario.png
-```
+Ejemplo de validaciones cuando los datos ingresados son incorrectos.
 
 ![Advertencias del formulario](img/02-advertencias-formulario.png)
 
 ### 3. Funcion formatearNombre
 
-Toma esta captura escribiendo un nombre desordenado, por ejemplo:
-
-```txt
-oMAR   rUTiLiO   vALENCIA
-```
-
-La captura debe mostrar el mensaje donde aparece el resultado de `formatearNombre`.
-
-Nombre del archivo:
-
-```txt
-img/03-formatear-nombre.png
-```
+Ejemplo del resultado de la funcion `formatearNombre` al corregir mayusculas, minusculas y espacios del nombre.
 
 ![Funcion formatearNombre](img/03-formatear-nombre.png)
 
 ### 4. Funcion limpiarTelefono
 
-Toma esta captura escribiendo el telefono con simbolos, por ejemplo:
-
-```txt
-(951) 174-3990
-```
-
-La captura debe mostrar el numero limpio:
-
-```txt
-9511743990
-```
-
-Nombre del archivo:
-
-```txt
-img/04-limpiar-telefono.png
-```
+Ejemplo del resultado de `limpiarTelefono`, mostrando el numero sin espacios, parentesis ni guiones.
 
 ![Funcion limpiarTelefono](img/04-limpiar-telefono.png)
 
 ### 5. Barra de contrasena
 
-Toma esta captura mientras escribes una contrasena incompleta para que se vea que falta algo.
-
-Ejemplo:
-
-```txt
-Hola12
-```
-
-Luego puedes tomar otra con contrasena segura:
-
-```txt
-Hola123!
-```
-
-Nombre del archivo:
-
-```txt
-img/05-barra-password.png
-```
+Validacion visual de la contrasena, indicando que requisitos faltan para que sea segura.
 
 ![Barra de password](img/05-barra-password.png)
 
 ### 6. Registro exitoso y modal
 
-Toma esta captura con todos los datos correctos y el modal abierto mostrando la edad calculada.
-
-Nombre del archivo:
-
-```txt
-img/06-modal-edad.png
-```
+Resultado del formulario cuando todos los datos son correctos y se muestra el modal con la edad calculada.
 
 ![Modal con edad calculada](img/06-modal-edad.png)
 
 ### 7. Login con errores
 
-Toma esta captura en `login.html` con un correo incorrecto o password inseguro.
-
-Nombre del archivo:
-
-```txt
-img/07-login-error.png
-```
+Validacion del login cuando el correo o la contrasena no cumplen las reglas.
 
 ![Login con errores](img/07-login-error.png)
 
 ### 8. Login correcto
 
-Toma esta captura en `login.html` usando un correo valido y una contrasena segura.
-
-Nombre del archivo:
-
-```txt
-img/08-login-correcto.png
-```
+Validacion del login cuando el correo y la contrasena son correctos.
 
 ![Login correcto](img/08-login-correcto.png)
 
@@ -431,11 +335,7 @@ En el video se puede mostrar este orden:
 6. Enviar el formulario y mostrar el modal con la edad.
 7. Abrir `login.html` y validar correo y contrasena.
 
-Pega aqui el enlace del video:
-
-```txt
-https://tu-enlace-del-video.com
-```
+El enlace del video se agrega al entregar el repositorio.
 
 ## Conclusion
 
