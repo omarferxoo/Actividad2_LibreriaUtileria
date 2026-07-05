@@ -8,7 +8,7 @@
 
 <br>
 
-![Logo de portada](img/logoportada.png)
+<img src="img/logoportada.png" alt="Logo de portada" width="260">
 
 <br>
 
