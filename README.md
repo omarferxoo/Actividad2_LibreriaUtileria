@@ -18,13 +18,13 @@
 <br>
 
 **Docente:** Martinez Nieto Adelina  
-**Grupo:** 7D  
+**Grupo:** 7SD  
 **Alumno:** Valencia Borja Omar Rutilio  
 **Numero de control:** 22161258
 
 <br>
 
-**Oaxaca, Oaxaca, 29 de mayo de 2026**
+**Oaxaca, Oaxaca, 04 de Julio de 2026**
 
 </div>
 
