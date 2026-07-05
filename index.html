@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="contenedor">
+    <section class="caja">
+      <h1>Formulario de Registro</h1>
+      <p class="texto">Validaciones hechas con la libreria <strong>utileria.js</strong>.</p>
+
+      <form id="registroForm">
+        <div class="fila">
+          <label>
+            Nombre completo
+            <input type="text" id="nombre" placeholder="Ej. Ana Garcia">
+            <small id="nombreMensaje"></small>
+          </label>
+
+          <label>
+            Correo electronico
+            <input type="email" id="correo" placeholder="correo@ejemplo.com">
+            <small id="correoMensaje"></small>
+          </label>
+        </div>
+
+        <div class="fila">
+          <label>
+            Telefono
+            <input type="tel" id="telefono" placeholder="10 digitos">
+            <small id="telefonoMensaje"></small>
+          </label>
+
+          <label>
+            Fecha de nacimiento
+            <input type="date" id="fechaNacimiento">
+            <small id="fechaMensaje"></small>
+          </label>
+        </div>
+
+        <label>
+          Password
+          <input type="password" id="password" placeholder="Minimo 8 caracteres">
+          <div class="barra"><div id="passwordBar"></div></div>
+          <small id="passwordMensaje"></small>
+        </label>
+
+        <div class="botones">
+          <a href="login.html">Ir al login</a>
+          <button type="submit">Registrarse</button>
+        </div>
+      </form>
+
+      <div id="resultado"></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-caja">
+      <h2>Edad calculada</h2>
+      <p id="modalTexto"></p>
+      <button type="button" id="cerrarModal">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="js/utileria.js"></script>
+  <script src="js/formulario.js"></script>
+</body>
+</html>

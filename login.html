@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utileria JS - Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="page-shell compact">
+    <section class="panel">
+      <div class="panel-header">
+        <p class="eyebrow">Acceso</p>
+        <h1>Login</h1>
+        <p>Valida correo y password usando la misma libreria.</p>
+      </div>
+
+      <form id="loginForm" novalidate>
+        <label>
+          Correo electronico
+          <input type="email" id="loginCorreo" placeholder="correo@ejemplo.com" autocomplete="email">
+          <small id="loginCorreoError"></small>
+        </label>
+
+        <label>
+          Password
+          <input type="password" id="loginPassword" placeholder="Password seguro" autocomplete="current-password">
+          <small id="loginPasswordError"></small>
+        </label>
+
+        <div class="actions">
+          <a class="secondary-link" href="index.html">Volver al formulario</a>
+          <button type="submit">Entrar</button>
+        </div>
+      </form>
+
+      <div id="loginResultado" class="result" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="js/utileria.js"></script>
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    const loginResultado = document.getElementById("loginResultado");
+
+    loginForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const correo = document.getElementById("loginCorreo").value;
+      const password = document.getElementById("loginPassword").value;
+      const correoError = document.getElementById("loginCorreoError");
+      const passwordError = document.getElementById("loginPasswordError");
+
+      correoError.textContent = "";
+      passwordError.textContent = "";
+      loginResultado.textContent = "";
+      loginResultado.className = "result";
+
+      let esValido = true;
+
+      if (!validarCorreo(correo)) {
+        correoError.textContent = "Ingresa un correo valido.";
+        esValido = false;
+      }
+
+      if (!validarPassword(password)) {
+        passwordError.textContent = "Password inseguro.";
+        esValido = false;
+      }
+
+      if (esValido) {
+        loginResultado.textContent = "Login valido. Las credenciales cumplen con las reglas.";
+        loginResultado.classList.add("success");
+      } else {
+        loginResultado.textContent = "No se puede iniciar sesion con esos datos.";
+        loginResultado.classList.add("error");
+      }
+    });
+  </script>
+</body>
+</html>
